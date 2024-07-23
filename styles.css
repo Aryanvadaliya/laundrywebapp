@@ -1,0 +1,406 @@
+*{
+    margin: 0;padding: 0;
+    
+}
+body{
+    width: 100vw;
+   height: 100vh;
+   font-family: sans-serif;
+   box-sizing: border-box;
+   overflow-x: hidden;
+   
+   
+}
+
+
+.navbarr{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    padding: 13px 25px;
+    box-sizing: border-box;
+    align-items: center;
+}
+.nav-links{
+    display: inline-block;
+    margin-bottom: 0;
+    
+}
+li{
+    display: inline;
+    margin: 0 20x;
+    padding: 0 20px;
+    color: gray;
+    color: inherit;
+}
+span:first-child{
+    display: inline;
+
+    font-size: 1,2rem;
+    align-self: center;
+    font-weight: 700;
+    
+}
+.username{
+    background-color: rgb(230,247,255);
+  
+    color: rgb(10,168,255);
+    padding: 20px 11px;
+    font-size: 1.2rem;
+    border: none;
+
+   
+    font-weight: 500;
+    border-radius: 10px;
+}
+.hamburger-menu{
+    display: none;
+}
+
+/* Hero section  */
+p{
+    margin-bottom: 0;
+}
+.hero {
+    justify-content: center;
+    display: flex;
+
+    align-items: start;
+}
+.left{
+    width: 50%;
+    
+    box-sizing: border-box;
+    padding-right: 55px;
+
+}
+.right{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.head{
+    font-size: 3.7rem;
+    text-transform: capitalize;
+    color: rgb(72,89,101);
+}
+
+.mid{
+    font-size: 3.7rem;
+    color: rgb(6,168,255);
+}
+
+.para{
+    color: gray;
+    font-size:1.5rem;
+    margin-top: 10px;
+}
+
+.book{
+    background-color: rgb(8,169,255);
+    margin: 30px 10px;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+
+}
+
+.right img{
+    width: 90%;
+}
+
+
+
+/* footer */
+.footer{
+        background-color: rgb(10,168,255);
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .hero{
+        padding: 5vh 5vw;
+    }
+    .head{
+        font-size: 2.0rem;
+        font-weight: 700;
+        line-height: 1.3;
+    }
+    
+    .mid{
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 10px 0;
+    }
+    img{
+        height: 30%;
+    }
+    .para{
+
+        font-size:1rem;
+        line-height: 1.5;
+
+    }
+    .left {
+        padding-right: 30px;
+    }
+
+    .feature{
+        width: 50%;
+    }
+    
+
+}
+
+
+
+
+
+@media screen and (max-width: 650px) {
+    body{
+        overflow: auto;
+    }
+    .navbar{
+        margin-top: 10px;
+    }
+    .hero{
+        padding: 3vh 5vw;
+        display: block;
+    }
+    
+    .head{
+        font-size: 2.0rem;
+        font-weight: 700;
+        line-height: 1.3;
+        margin-top: 30px;
+    }
+    
+    .mid{
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 10px 0;
+    }
+    img{
+        width: 100%;
+    
+    }
+    .para{
+
+        font-size:1rem;
+        line-height: 1.5;
+
+    }
+    .left {
+        padding-right: 30px;
+        width: 100%;
+    }
+
+   
+    .nav-links{
+        display: none;
+    }
+     
+    .nav-toggle:checked ~ .nav-links {
+        position: absolute;
+        right: 0;
+        background-color: black;
+        width: 60%;
+        height: 100vh;
+        color: white;
+        display: flex;
+        top: 0;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    li{
+        margin: 7px;
+        font-size: x-large;
+    }
+    .hamburger-menu{
+        display: inline-block;
+        z-index: 2;
+       
+    }
+
+    .feature{
+        width: 100%;
+    }
+    
+
+    
+}
+
+
+.hamburger-menu{
+    display: none;
+}
+
+
+
+
+table td:nth-child(2) {
+    width: 65%;
+}
+.cardd:nth-child(1){
+    width: 30%;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.price::before{
+    content: "₹";
+}
+.blue{
+    color: rgb(74,85,209);
+    font-weight: bolder;
+}
+.list{
+    height: 170px;
+}
+
+.inner-card{
+    border: 1px solid grey;
+    border-radius: 10px;
+    
+}
+/* input{
+    border-radius: 10px;
+} */
+
+.addItem{
+    background-color: rgb(232,246,231);
+    color: green;
+    outline: none;
+    border: none;
+    width: 60%;
+    border-radius: 10px;
+}
+.button{
+    background-color: rgb(74,85,209);
+    font-weight: 700;
+    padding: 20px 0;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    opacity: .4;
+}
+.note{
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+table tr{
+    border-top: 1px solid grey;
+}
+
+
+
+
+.services img{
+    width: 100%;
+    margin: auto 0;
+    max-width: fit-content;
+}
+
+.skipItem{
+    background-color: rgb(250,244,244);
+    color: red;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    width: 60%;
+}
+
+.cartItem{
+    /* height: 170px; */
+    overflow-y: auto;
+}
+.cartItem td:first-child{
+    width: 18%;
+}
+.totalTable td{
+    width: 83%;
+}
+
+
+
+.allcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.features{
+
+    filter: grayscale();
+}
+.feature{
+    width: 25%;
+    text-align: center;
+    
+}
+
+.hero{
+
+    background-color: rgb(245,247,249)
+}
+
+
+.newsletter{
+    background-color: rgb(6,168,255);
+    color: white;
+    
+}
+.subscribe-form{
+    width: 60%;
+}
+
+.subscribe-form input{
+    width: 40%;
+    background-color: rgb(6, 181, 250);
+
+}
+.subscribe-form input::placeholder{
+    color: white;
+}
+
+.subscribe-form button{
+    width: 40%;
+}
+
+
+
+.list-unstyled li{
+    display: block;
+
+}
+footer{
+    height: 30vh;
+}
+
+
+footer{
+    background-color: rgb(245,247,249);
+}
+
+
+
+    
